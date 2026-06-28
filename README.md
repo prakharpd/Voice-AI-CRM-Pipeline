@@ -19,6 +19,7 @@ A prospect fills a form on the Streamlit dashboard. The system validates their d
 
 ## Project Structure
 
+```
 ase-lead-pipeline/
 ├── main.py                        Entry point. Run this to start FastAPI on port 8000
 ├── dashboard.py                   Streamlit app. Lead intake form and live CRM dashboard
@@ -55,6 +56,7 @@ ase-lead-pipeline/
 │   └── architecture.md            Mermaid flowchart of the full system
 └── scripts/
     └── test_webhook.py            Simulates a lead POST to test pipeline without Streamlit
+```
 
 ## Environment Variables
 
