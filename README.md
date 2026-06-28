@@ -73,40 +73,65 @@ Copy .env.example to .env and fill in the values before running the project.
 ## Installation
 
 1. Navigate into the project folder
-   cd ase-lead-pipeline
+```bash
+cd ase-lead-pipeline
+```
 
 2. Create a virtual environment
-   python -m venv .venv
+```bash
+python -m venv .venv
+```
 
 3. Activate the virtual environment
-   Windows Git Bash: source .venv/Scripts/activate
-   Mac or Linux: source .venv/bin/activate
+
+Windows Git Bash:
+```bash
+source .venv/Scripts/activate
+```
+Mac or Linux:
+```bash
+source .venv/bin/activate
+```
 
 4. Install all required packages
-   pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
+```
 
 5. Copy the environment file and fill in your credentials
-   cp .env.example .env
+```bash
+cp .env.example .env
+```
 
 6. Pull the Ollama model
-   ollama pull gpt-oss:20b-cloud
+```bash
+ollama pull gpt-oss:20b-cloud
+```
+
+---
 
 ## How to Run
 
 Three separate terminals are needed.
 
-Terminal 1 - Start Ollama
+**Terminal 1 - Start Ollama**
+```bash
 ollama serve
+```
 
-Terminal 2 - Start FastAPI pipeline server
+**Terminal 2 - Start FastAPI pipeline server**
+```bash
 cd ase-lead-pipeline
 source .venv/Scripts/activate
 python main.py
+```
 
-Terminal 3 - Start Streamlit dashboard
+**Terminal 3 - Start Streamlit dashboard**
+```bash
 cd ase-lead-pipeline
 source .venv/Scripts/activate
 streamlit run dashboard.py
+```
 
 ## Testing Without the Form
 
