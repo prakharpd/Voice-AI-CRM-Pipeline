@@ -8,6 +8,8 @@ Sales teams waste hours calling unqualified leads who have no budget no timeline
 
 A prospect fills a form on the Streamlit dashboard. The system validates their details writes them to a local CSV file and emails them a session link automatically. When the prospect opens the link they answer 8 spoken questions in the browser using their microphone. Their voice is transcribed using OpenAI Whisper running locally on the machine. The transcript is then passed to 4 AI agents powered by gpt-oss:20b-cloud through Ollama. The Discovery Agent extracts business context. The Budget Agent classifies spending capacity. The Sentiment Agent reads tone and buying intent. The Analyst Agent combines everything into a final lead score from 0 to 100. If the score is above 70 the sales rep gets an instant email alert. All results appear live in the CRM dashboard. No manual calls no spreadsheets no guesswork.
 
+![Pipeline Workflow](docs/screenshots/pipeline_diagram.png)
+
 ## System Requirements
 
 - Python 3.10 or above
@@ -196,7 +198,7 @@ discovery_summary, discovery_flags, budget_category, budget_confidence, sentimen
 
 ## Screenshot Placeholders
 
-Replace these placeholders with actual screenshots after running the project.
+Below are the screenshots of the project
 
 ![Streamlit Intake Form](docs/screenshots/intake_form.png)
 ![Live CRM Dashboard](docs/screenshots/crm_dashboard.png)
